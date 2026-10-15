@@ -439,13 +439,13 @@ document.addEventListener("keydown", e=>{ if (e.key==="Escape" && !scrim.hidden)
 document.getElementById("add").onclick = ()=>openForm(null);
 document.getElementById("clearEx").onclick = ()=>{ events = events.filter(e=>!e.ex); save(); render(); };
 
-// ---------- Mini tú ----------
+// ---------- Bibo ----------
 const MOODS = {
-  feliz:   {t:"¡Mini tú está feliz!",    c:"--c-entreno"},
-  bien:    {t:"Mini tú va bien",          c:"--accent"},
-  cansado: {t:"Mini tú está cansado",     c:"--c-tarea"},
-  triste:  {t:"Mini tú está desanimado",  c:"--c-otro"},
-  descanso:{t:"Mini tú está descansando", c:"--c-rutina"}
+  feliz:   {t:"¡Bibo está feliz!",    c:"--c-entreno"},
+  bien:    {t:"Bibo va bien",          c:"--accent"},
+  cansado: {t:"Bibo está cansado",     c:"--c-tarea"},
+  triste:  {t:"Bibo está desanimado",  c:"--c-otro"},
+  descanso:{t:"Bibo está descansando", c:"--c-rutina"}
 };
 function petSVG(m){
   const eyes = {

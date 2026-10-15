@@ -1,6 +1,6 @@
 # Mi Semana
 
-Horario semanal con Mini tú, hecho como PWA (app web instalable).
+Horario semanal con Bibo, hecho como PWA (app web instalable).
 
 - `index.html`: la app
 - `manifest.json`: nombre, colores e íconos

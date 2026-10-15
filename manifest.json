@@ -1,7 +1,7 @@
 {
   "name": "Mi Semana",
   "short_name": "Mi Semana",
-  "description": "Mi horario semanal con Mini tú.",
+  "description": "Mi horario semanal con Bibo.",
   "lang": "es",
   "start_url": "./",
   "scope": "./",

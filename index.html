@@ -254,6 +254,7 @@ function miHorario(){
     add(d,"22:00","22:30","Bañarme","rutina");
     add(d,"22:30","23:00","Dormir","rutina");
   }
+  out.push({id:"h-sab-box",day:5,start:"11:00",end:"12:00",title:"Box",cat:"entreno"});   // sábado
   return out;
 }
 // Acomoda bloques que se empalman uno al lado del otro
@@ -284,6 +285,11 @@ function load(){
 function save(){ try { localStorage.setItem(KEY, JSON.stringify(events)); } catch(e){} }
 
 let events = load();
+// Agrega el box del sábado a quien ya tenía el horario guardado (sin borrar sus cambios)
+if (!events.some(e=>e.id==="h-sab-box")){
+  events.push({id:"h-sab-box",day:5,start:"11:00",end:"12:00",title:"Box",cat:"entreno"});
+  save();
+}
 
 // Lo que marcaste como hecho, por fecha
 const DKEY = "mi-semana-hechos-v1";

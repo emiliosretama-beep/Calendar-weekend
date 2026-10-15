@@ -1,6 +1,6 @@
 // Service worker de Mi Semana.
 // Cambia VERSION cada vez que subas cambios, o los celulares seguirán viendo la versión vieja.
-const VERSION = "mi-semana-v1";
+const VERSION = "mi-semana-v2";
 const APP = ["./", "./index.html", "./manifest.json", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png"];
 
 self.addEventListener("install", e => {
